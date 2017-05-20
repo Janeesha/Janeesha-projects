@@ -1,8 +1,7 @@
-
 <!DOCTYPE html>
 <html ng-app="myapp">
 <head>
-	<title>custom-directives</title>
+	<title>api-calls</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
 <!-- jQuery library -->
@@ -13,16 +12,15 @@
 </head>
 <body>
 <div class="container" ng-controller="mycontroller">
-<div ng-controller="mycontroller">
-{{msg}}
-<div ng-repeat="user in userDetails">
-<my-bangalore-is-super company-name="{{company}}"  user-details="user"
-   change="changeCompanyName()">
-	
-</my-bangalore-is-super>
-</div>
+{{msg}}<br>
+<br>
+{{data}}<br><br>
+<label>Weather details report</label>
+<br>
+<input type="button" value="get weather report" ng-click="getweatherDetais()">
 </div>
  <script src="https://code.angularjs.org/1.6.4/angular.js" type="text/javascript"></script>
+ <script src="https://code.angularjs.org/1.6.4/angular-resource.js"></script>
  <script src="app.js" type="text/javascript"></script>
 </body>
 </html>
